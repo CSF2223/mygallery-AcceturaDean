@@ -1,169 +1,202 @@
 /*
-Color Palette:
-background color: #414141
-font color:        #AF0404
-secondary color:   #FD841F
-tertiary color:    #EEEBDD
+Color Palette
+background color: #200439
+primary: #512C73
+secondary: #361356
+tertiary: #6F4D8F
+accent: #9277AC
+vegasGold: #c5b358
+white: #fff
+black: #000  
 */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
- 
- 
- 
- 
-html {
-    font-size: 62.5%;    /* Default font size is 16px - 62.5% of 16 is 10 px -
-                            1 rem (relative unit) now will be equivalent to 10px} */
-}
 
-header {
-    margin: 0 4rem;
-    letter-spacing: 0.8rem;
-    text-align: center;
-    border-bottom: 1px solid #826F66;
-    border-right: 1px solid #826F66;
-    border-left: 1px solid #826F66;
-    padding: 0.5rem;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
-    text-transform: uppercase;
+html { 
+    /* If we add any padding or border onto an element it does not affect he width of the element */
+    box-sizing: border-box;
 }
 
 body {
-   background-color: #414141;
-   color: #414141;
-   font-family: 'Open Sans', sans-serif;
     margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    background-color: #200439;
+    color: #fff;
+} 
 
-}
-
-cite {
-    font-size: 2rem;
-}
-p {
-    font-size: 2rem;
-}
-
-.imageCard   {
+.hero {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    allign-items:center;
-    margin: 7rem 4rem;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.imageCard img {
-    width: 100%;
-
-    border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.heroImage {
+    padding: 2.5rem;
 }
 
+.heroImage img {
+    border-radius: 6rem;
+    box-shadow: 10px 10px #000;
+    width: 75%;
+    height: auto;
+}
 
-.imageCard a {
+.heroText {
+    font-size: 0.7rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.heroName {
+    color: #c5b358;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.heroTextTop {
+    padding: 1rem;
+}
+
+.heroTextBottom{
+    padding: 1rem;
+}
+
+.heroButton {
+    margin: 2rem;
+}
+
+.button {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #9277AC;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #200439;
     text-decoration: none;
-    color: #AF0404;
+    box-shadow: 8px 8px 4px #000;
 }
 
-.cardText {
-    color: #C69B7B;
+.button:hover {
+    background-color: #361356;
+    color: #c5b358;
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.projectsHeader{
+    margin: 1.5rem 3rem;
     text-align: center;
-    padding: 2rem;
-    border-radius: 30px;
-    margin-top: 2rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-@media (min-width: 768px) {
-    header {
-        font-size: 1.6rem;
-    }
-
-    .gallery {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-evenly;
-     flex-wrap: wrap;
-    } 
-    .imageCard {
-        max-width: 28%;
-    }
-}
-
-
-html {
-    font-size: 62.5%;    /* Default font size is 16px - 62.5% of 16 is 10 px -
-                            1 rem (relative unit) now will be equivalent to 10px} */
-}
-
-header {
-    margin: 0 4rem;
-    letter-spacing: 0.8rem;}
-    
-        text-align: center; {
-    border-bottom: 1px solid #826F66;
-    border-right: 1px solid #826F66;
-    border-left: 1px solid #826F66;
     padding: 0.5rem;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
-    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
-body {
-   background-color: #3A3845;
-   color: #F7CCAC;
-   font-family: 'Open Sans', sans-serif;
-    margin: 0;
-
+.projectCard{
+    background-color: #fff;
+    color: #200439;
+    margin: 4rem 3rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    border: 1px solid #9277AC;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 5px #000;
 }
 
-cite {
-    font-size: 2rem;
-}
-p {
-    font-size: 2rem;
-}
-
-.imageCard   {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    margin: 7rem 4rem;
-}
-
-.imageCard img {
+.projectCard img {
     width: 100%;
     height: auto;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3rem;
+margin: 1rem 0;
 }
 
-
-.imageCard a {
-    text-decoration: none;
-    color: #826F66;
+.projectCard h2{
+    margin: 0.5rem 1rem 1.5rem 1rem;
+    font-weight: 400;
 }
 
-.cardText {
-    color: #C69B7B;
-    text-align: center;
-    padding: 2rem;
-    border-radius: 30px;
+.projectCard p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.projectIcons {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
     margin-top: 2rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media (min-width: 768px) {
-    header {
-        font-size: 1.6rem;
-    }
+.projectIcons p {
+    margin: 0 0 1rem 0;
+    font-size: 0.8rem;
+}
 
-    .gallery {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-evenly;
-     flex-wrap: wrap;
-    } 
-    .imageCard {
-        max-width: 28%;
+.fa-github {
+    font-size: 2.2rem;
+    padding: 1.5rem;
+}
+
+.fa-file {
+    font-size: 2.2rem;
+    padding: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    color: #c5b358;
+    margin: 10rem 0;
+    border-top: 1px solid #9277AC;
+}
+
+.copyright {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color:#c5b358;
+    display: block;
+}
+
+.filler {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 80vh;
+}
+
+
+
+@media (min-width: 800px) {
+    .hero {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    }    
+    
+    .heroText{
+        font-size: 1rem;
+    }
+    
+    .heroName{
+        font-size: 3.5rem;
+    }
+    
+    .button {
+        font-size: 1.1rem;
+    }
+    
+    .projectGallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .projectCard {
+        max-width: 20%;
     }
 }
